@@ -1,8 +1,12 @@
 # About
+Conversion of unit library for golang
+Fork form [![martinlindhe](https://github.com/martinlindhe/unit)](https://github.com/martinlindhe/unit)
+Change Unit type from float64 to interface,
+Add my own data type.
 
-[![Travis-CI](https://api.travis-ci.org/martinlindhe/unit.svg)](https://travis-ci.org/martinlindhe/unit)
-[![codecov.io](https://codecov.io/github/martinlindhe/unit/coverage.svg?branch=master)](https://codecov.io/github/martinlindhe/unit?branch=master)
-[![GoDoc](https://godoc.org/github.com/martinlindhe/unit?status.svg)](https://godoc.org/github.com/martinlindhe/unit)
+[![GoDoc](https://godoc.org/github.com/CokinLee/unit?status.svg)](https://godoc.org/github.com/martinlindhe/unit)
+[![codecov.io](https://codecov.io/github/CokinLee/unit/coverage.svg?branch=master)](https://codecov.io/github/martinlindhe/unit?branch=master)
+
 
 Conversion of unit library for golang
 
@@ -10,7 +14,7 @@ Conversion of unit library for golang
 ## Installation
 
 ```
-go get -u github.com/martinlindhe/unit
+go get -u github.com/CokinLee/unit
 ```
 
 
