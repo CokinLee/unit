@@ -6,9 +6,9 @@ import (
 
 func TestNumber(t *testing.T) {
 	// SI
+	assertFloatEqual(t, 1e1, (1 * Percent).Permille())
 	assertFloatEqual(t, 1e2, (1 * Base).Percent())
-	assertFloatEqual(t, 1e0, (1 * Base).Base())
-
+	assertFloatEqual(t, 1e-2, (1 * Percent).Base())
 	// CN
 	assertFloatEqual(t, 1e-1, (1 * Base).Shi())
 	assertFloatEqual(t, 1e-1, (1 * Shi).Bai())

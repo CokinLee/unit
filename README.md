@@ -42,6 +42,31 @@ fmt.Println(ft.Feet(), "feet is", ft.Meters(), "meters")
 ```
 
 
+Converter Usage:
+```go
+data = 0.9
+c := NewUnitConversion(data, unit.Liter, unit.CubicMeter)
+f, err := c.Convert()
+if err != nil {
+    // handle error
+} else {
+    fmt.Printf("%f liters equals %f cubic meters\n", data, f)
+}
+```
+
+
+Convert Usage:
+```go
+data = 0.9
+f, err := unit.Convert(data, unit.Liter, unit.CubicMeter)
+if err != nil {
+    // handle error
+} else {
+    fmt.Printf("%f liters equals %f cubic meters\n", data, f)
+}
+```
+
+
 ## Temperature
 
 Cannot be used to scale directly like the other units.
