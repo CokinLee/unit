@@ -1,7 +1,12 @@
 package unit
 
 // Number represents percent and Chinese number unit
-type Number Unit
+type Number float64
+
+// Float64 implement the Unit interface
+func (n Number) Float64() float64 {
+	return float64(n)
+}
 
 // ...
 const (

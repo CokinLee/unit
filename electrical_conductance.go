@@ -1,7 +1,12 @@
 package unit
 
 // ElectricalConductance represents a SI unit of electrical conductance (in siemens, S)
-type ElectricalConductance Unit
+type ElectricalConductance float64
+
+// Float64 implement the Unit interface
+func (e ElectricalConductance) Float64() float64 {
+	return float64(e)
+}
 
 // ...
 const (

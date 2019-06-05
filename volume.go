@@ -1,7 +1,12 @@
 package unit
 
 // Volume represents a volume in cubic meters
-type Volume Unit
+type Volume float64
+
+// Float64 implement the Unit interface
+func (v Volume) Float64() float64 {
+	return float64(v)
+}
 
 // ...
 const (

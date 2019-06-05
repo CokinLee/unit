@@ -1,7 +1,12 @@
 package unit
 
 // Datarate represents a unit of data rate (in bits per second, bit/s)
-type Datarate Unit
+type Datarate float64
+
+// Float64 implement the Unit interface
+func (d Datarate) Float64() float64 {
+	return float64(d)
+}
 
 // ...
 const (
@@ -47,171 +52,171 @@ const (
 )
 
 // BitsPerSecond returns the data rate in bit/s
-func (b Datarate) BitsPerSecond() float64 {
-	return float64(b)
+func (d Datarate) BitsPerSecond() float64 {
+	return float64(d)
 }
 
 // KilobitsPerSecond returns the data rate in kbit/s
-func (b Datarate) KilobitsPerSecond() float64 {
-	return float64(b / KilobitPerSecond)
+func (d Datarate) KilobitsPerSecond() float64 {
+	return float64(d / KilobitPerSecond)
 }
 
 // MegabitsPerSecond returns the data rate in Mbit/s
-func (b Datarate) MegabitsPerSecond() float64 {
-	return float64(b / MegabitPerSecond)
+func (d Datarate) MegabitsPerSecond() float64 {
+	return float64(d / MegabitPerSecond)
 }
 
 // GigabitsPerSecond returns the data rate in Gbit/s
-func (b Datarate) GigabitsPerSecond() float64 {
-	return float64(b / GigabitPerSecond)
+func (d Datarate) GigabitsPerSecond() float64 {
+	return float64(d / GigabitPerSecond)
 }
 
 // TerabitsPerSecond returns the data rate in Tbit/s
-func (b Datarate) TerabitsPerSecond() float64 {
-	return float64(b / TerabitPerSecond)
+func (d Datarate) TerabitsPerSecond() float64 {
+	return float64(d / TerabitPerSecond)
 }
 
 // PetabitsPerSecond returns the data rate in Pbit/s
-func (b Datarate) PetabitsPerSecond() float64 {
-	return float64(b / PetabitPerSecond)
+func (d Datarate) PetabitsPerSecond() float64 {
+	return float64(d / PetabitPerSecond)
 }
 
 // ExabitsPerSecond returns the data rate in Ebit/s
-func (b Datarate) ExabitsPerSecond() float64 {
-	return float64(b / ExabitPerSecond)
+func (d Datarate) ExabitsPerSecond() float64 {
+	return float64(d / ExabitPerSecond)
 }
 
 // ZettabitsPerSecond returns the data rate in Zbit/s
-func (b Datarate) ZettabitsPerSecond() float64 {
-	return float64(b / ZettabitPerSecond)
+func (d Datarate) ZettabitsPerSecond() float64 {
+	return float64(d / ZettabitPerSecond)
 }
 
 // YottabitsPerSecond returns the data rate in Ybit/s
-func (b Datarate) YottabitsPerSecond() float64 {
-	return float64(b / YottabitPerSecond)
+func (d Datarate) YottabitsPerSecond() float64 {
+	return float64(d / YottabitPerSecond)
 }
 
 // BytesPerSecond returns the data rate in B/s
-func (b Datarate) BytesPerSecond() float64 {
-	return float64(b / BytePerSecond)
+func (d Datarate) BytesPerSecond() float64 {
+	return float64(d / BytePerSecond)
 }
 
 // KilobytesPerSecond returns the data rate in kB/s
-func (b Datarate) KilobytesPerSecond() float64 {
-	return float64(b / KilobytePerSecond)
+func (d Datarate) KilobytesPerSecond() float64 {
+	return float64(d / KilobytePerSecond)
 }
 
 // MegabytesPerSecond returns the data rate in MB/s
-func (b Datarate) MegabytesPerSecond() float64 {
-	return float64(b / MegabytePerSecond)
+func (d Datarate) MegabytesPerSecond() float64 {
+	return float64(d / MegabytePerSecond)
 }
 
 // GigabytesPerSecond returns the data rate in GB/s
-func (b Datarate) GigabytesPerSecond() float64 {
-	return float64(b / GigabytePerSecond)
+func (d Datarate) GigabytesPerSecond() float64 {
+	return float64(d / GigabytePerSecond)
 }
 
 // TerabytesPerSecond returns the data rate in TB/s
-func (b Datarate) TerabytesPerSecond() float64 {
-	return float64(b / TerabytePerSecond)
+func (d Datarate) TerabytesPerSecond() float64 {
+	return float64(d / TerabytePerSecond)
 }
 
 // PetabytesPerSecond returns the data rate in PB/s
-func (b Datarate) PetabytesPerSecond() float64 {
-	return float64(b / PetabytePerSecond)
+func (d Datarate) PetabytesPerSecond() float64 {
+	return float64(d / PetabytePerSecond)
 }
 
 // ExabytesPerSecond returns the data rate in EB/s
-func (b Datarate) ExabytesPerSecond() float64 {
-	return float64(b / ExabytePerSecond)
+func (d Datarate) ExabytesPerSecond() float64 {
+	return float64(d / ExabytePerSecond)
 }
 
 // ZettabytesPerSecond returns the data rate in ZB/s
-func (b Datarate) ZettabytesPerSecond() float64 {
-	return float64(b / ZettabytePerSecond)
+func (d Datarate) ZettabytesPerSecond() float64 {
+	return float64(d / ZettabytePerSecond)
 }
 
 // YottabytesPerSecond returns the data rate in YB/s
-func (b Datarate) YottabytesPerSecond() float64 {
-	return float64(b / YottabytePerSecond)
+func (d Datarate) YottabytesPerSecond() float64 {
+	return float64(d / YottabytePerSecond)
 }
 
 // KibibitsPerSecond returns the data rate in Kibit/s
-func (b Datarate) KibibitsPerSecond() float64 {
-	return float64(b / KibibitPerSecond)
+func (d Datarate) KibibitsPerSecond() float64 {
+	return float64(d / KibibitPerSecond)
 }
 
 // MebibitsPerSecond returns the data rate in Mibit/s
-func (b Datarate) MebibitsPerSecond() float64 {
-	return float64(b / MebibitPerSecond)
+func (d Datarate) MebibitsPerSecond() float64 {
+	return float64(d / MebibitPerSecond)
 }
 
 // GibibitsPerSecond returns the data rate in Gibit/s
-func (b Datarate) GibibitsPerSecond() float64 {
-	return float64(b / GibibitPerSecond)
+func (d Datarate) GibibitsPerSecond() float64 {
+	return float64(d / GibibitPerSecond)
 }
 
 // TebibitsPerSecond returns the data rate in Tibit/s
-func (b Datarate) TebibitsPerSecond() float64 {
-	return float64(b / TebibitPerSecond)
+func (d Datarate) TebibitsPerSecond() float64 {
+	return float64(d / TebibitPerSecond)
 }
 
 // PebibitsPerSecond returns the data rate in Pibit/s
-func (b Datarate) PebibitsPerSecond() float64 {
-	return float64(b / PebibitPerSecond)
+func (d Datarate) PebibitsPerSecond() float64 {
+	return float64(d / PebibitPerSecond)
 }
 
 // ExbibitsPerSecond returns the data rate in Eibit/s
-func (b Datarate) ExbibitsPerSecond() float64 {
-	return float64(b / ExbibitPerSecond)
+func (d Datarate) ExbibitsPerSecond() float64 {
+	return float64(d / ExbibitPerSecond)
 }
 
 // ZebibitsPerSecond returns the data rate in Zibit/s
-func (b Datarate) ZebibitsPerSecond() float64 {
-	return float64(b / ZebibitPerSecond)
+func (d Datarate) ZebibitsPerSecond() float64 {
+	return float64(d / ZebibitPerSecond)
 }
 
 // YobibitsPerSecond returns the data rate in Yibit/s
-func (b Datarate) YobibitsPerSecond() float64 {
-	return float64(b / YobibitPerSecond)
+func (d Datarate) YobibitsPerSecond() float64 {
+	return float64(d / YobibitPerSecond)
 }
 
 // KibibytesPerSecond returns the data rate in KiB/s
-func (b Datarate) KibibytesPerSecond() float64 {
-	return float64(b / KibibytePerSecond)
+func (d Datarate) KibibytesPerSecond() float64 {
+	return float64(d / KibibytePerSecond)
 }
 
 // MebibytesPerSecond returns the data rate in MiB/s
-func (b Datarate) MebibytesPerSecond() float64 {
-	return float64(b / MebibytePerSecond)
+func (d Datarate) MebibytesPerSecond() float64 {
+	return float64(d / MebibytePerSecond)
 }
 
 // GibibytesPerSecond returns the data rate in GiB/s
-func (b Datarate) GibibytesPerSecond() float64 {
-	return float64(b / GibibytePerSecond)
+func (d Datarate) GibibytesPerSecond() float64 {
+	return float64(d / GibibytePerSecond)
 }
 
 // TebibytesPerSecond returns the data rate in TiB/s
-func (b Datarate) TebibytesPerSecond() float64 {
-	return float64(b / TebibytePerSecond)
+func (d Datarate) TebibytesPerSecond() float64 {
+	return float64(d / TebibytePerSecond)
 }
 
 // PebibytesPerSecond returns the data rate in PiB/s
-func (b Datarate) PebibytesPerSecond() float64 {
-	return float64(b / PebibytePerSecond)
+func (d Datarate) PebibytesPerSecond() float64 {
+	return float64(d / PebibytePerSecond)
 }
 
 // ExbibytesPerSecond returns the data rate in EiB/s
-func (b Datarate) ExbibytesPerSecond() float64 {
-	return float64(b / ExbibytePerSecond)
+func (d Datarate) ExbibytesPerSecond() float64 {
+	return float64(d / ExbibytePerSecond)
 }
 
 // ZebibytesPerSecond returns the data rate in ZiB/s
-func (b Datarate) ZebibytesPerSecond() float64 {
-	return float64(b / ZebibytePerSecond)
+func (d Datarate) ZebibytesPerSecond() float64 {
+	return float64(d / ZebibytePerSecond)
 }
 
 // YobibytesPerSecond returns the data rate in YiB/s
-func (b Datarate) YobibytesPerSecond() float64 {
-	return float64(b / YobibytePerSecond)
+func (d Datarate) YobibytesPerSecond() float64 {
+	return float64(d / YobibytePerSecond)
 }

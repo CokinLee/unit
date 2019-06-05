@@ -1,7 +1,12 @@
 package unit
 
 // Frequency represents a SI unit of frequency (in hertz, Hz)
-type Frequency Unit
+type Frequency float64
+
+// Float64 implement the Unit interface
+func (f Frequency) Float64() float64 {
+	return float64(f)
+}
 
 // ...
 const (

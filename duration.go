@@ -1,7 +1,12 @@
 package unit
 
 // Duration represents a SI unit of time (in seconds, s)
-type Duration Unit
+type Duration float64
+
+// Float64 implement the Unit interface
+func (d Duration) Float64() float64 {
+	return float64(d)
+}
 
 // ...
 const (
@@ -38,136 +43,136 @@ const (
 )
 
 // Yoctoseconds returns the time in ys
-func (t Duration) Yoctoseconds() float64 {
-	return float64(t / Yoctosecond)
+func (d Duration) Yoctoseconds() float64 {
+	return float64(d / Yoctosecond)
 }
 
 // Zeptoseconds returns the time in zs
-func (t Duration) Zeptoseconds() float64 {
-	return float64(t / Zeptosecond)
+func (d Duration) Zeptoseconds() float64 {
+	return float64(d / Zeptosecond)
 }
 
 // Attoseconds returns the time in as
-func (t Duration) Attoseconds() float64 {
-	return float64(t / Attosecond)
+func (d Duration) Attoseconds() float64 {
+	return float64(d / Attosecond)
 }
 
 // Femtoseconds returns the time in fs
-func (t Duration) Femtoseconds() float64 {
-	return float64(t / Femtosecond)
+func (d Duration) Femtoseconds() float64 {
+	return float64(d / Femtosecond)
 }
 
 // Picoseconds returns the time in ps
-func (t Duration) Picoseconds() float64 {
-	return float64(t / Picosecond)
+func (d Duration) Picoseconds() float64 {
+	return float64(d / Picosecond)
 }
 
 // Nanoseconds returns the time in ns
-func (t Duration) Nanoseconds() float64 {
-	return float64(t / Nanosecond)
+func (d Duration) Nanoseconds() float64 {
+	return float64(d / Nanosecond)
 }
 
 // Microseconds returns the time in µs
-func (t Duration) Microseconds() float64 {
-	return float64(t / Microsecond)
+func (d Duration) Microseconds() float64 {
+	return float64(d / Microsecond)
 }
 
 // Milliseconds returns the time in ms
-func (t Duration) Milliseconds() float64 {
-	return float64(t / Millisecond)
+func (d Duration) Milliseconds() float64 {
+	return float64(d / Millisecond)
 }
 
 // Centiseconds returns the time in cs
-func (t Duration) Centiseconds() float64 {
-	return float64(t / Centisecond)
+func (d Duration) Centiseconds() float64 {
+	return float64(d / Centisecond)
 }
 
 // Deciseconds returns the time in ds
-func (t Duration) Deciseconds() float64 {
-	return float64(t / Decisecond)
+func (d Duration) Deciseconds() float64 {
+	return float64(d / Decisecond)
 }
 
 // Seconds returns the time in s
-func (t Duration) Seconds() float64 {
-	return float64(t / Second)
+func (d Duration) Seconds() float64 {
+	return float64(d / Second)
 }
 
 // Decaseconds returns the time in das
-func (t Duration) Decaseconds() float64 {
-	return float64(t / Decasecond)
+func (d Duration) Decaseconds() float64 {
+	return float64(d / Decasecond)
 }
 
 // Hectoseconds returns the time in hs
-func (t Duration) Hectoseconds() float64 {
-	return float64(t / Hectosecond)
+func (d Duration) Hectoseconds() float64 {
+	return float64(d / Hectosecond)
 }
 
 // Kiloseconds returns the time in ks
-func (t Duration) Kiloseconds() float64 {
-	return float64(t / Kilosecond)
+func (d Duration) Kiloseconds() float64 {
+	return float64(d / Kilosecond)
 }
 
 // Megaseconds returns the time in Ms
-func (t Duration) Megaseconds() float64 {
-	return float64(t / Megasecond)
+func (d Duration) Megaseconds() float64 {
+	return float64(d / Megasecond)
 }
 
 // Gigaseconds returns the time in Gs
-func (t Duration) Gigaseconds() float64 {
-	return float64(t / Gigasecond)
+func (d Duration) Gigaseconds() float64 {
+	return float64(d / Gigasecond)
 }
 
 // Teraseconds returns the time in Ts
-func (t Duration) Teraseconds() float64 {
-	return float64(t / Terasecond)
+func (d Duration) Teraseconds() float64 {
+	return float64(d / Terasecond)
 }
 
 // Petaseconds returns the time in Ps
-func (t Duration) Petaseconds() float64 {
-	return float64(t / Petasecond)
+func (d Duration) Petaseconds() float64 {
+	return float64(d / Petasecond)
 }
 
 // Exaseconds returns the time in volt
-func (t Duration) Exaseconds() float64 {
-	return float64(t / Exasecond)
+func (d Duration) Exaseconds() float64 {
+	return float64(d / Exasecond)
 }
 
 // Zettaseconds returns the time in Zs
-func (t Duration) Zettaseconds() float64 {
-	return float64(t / Zettasecond)
+func (d Duration) Zettaseconds() float64 {
+	return float64(d / Zettasecond)
 }
 
 // Yottaseconds returns the time in Ys
-func (t Duration) Yottaseconds() float64 {
-	return float64(t / Yottasecond)
+func (d Duration) Yottaseconds() float64 {
+	return float64(d / Yottasecond)
 }
 
 // Minutes returns the time in m
-func (t Duration) Minutes() float64 {
-	return float64(t / Minute)
+func (d Duration) Minutes() float64 {
+	return float64(d / Minute)
 }
 
 // Hours returns the time in h
-func (t Duration) Hours() float64 {
-	return float64(t / Hour)
+func (d Duration) Hours() float64 {
+	return float64(d / Hour)
 }
 
 // Days returns the time in d
-func (t Duration) Days() float64 {
-	return float64(t / Day)
+func (d Duration) Days() float64 {
+	return float64(d / Day)
 }
 
 // Weeks returns the time in w
-func (t Duration) Weeks() float64 {
-	return float64(t / Week)
+func (d Duration) Weeks() float64 {
+	return float64(d / Week)
 }
 
 // ThirtyDayMonths returns the time in M
-func (t Duration) ThirtyDayMonths() float64 {
-	return float64(t / ThirtyDayMonth)
+func (d Duration) ThirtyDayMonths() float64 {
+	return float64(d / ThirtyDayMonth)
 }
 
 // JulianYears returns the time in Y
-func (t Duration) JulianYears() float64 {
-	return float64(t / JulianYear)
+func (d Duration) JulianYears() float64 {
+	return float64(d / JulianYear)
 }

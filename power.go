@@ -1,7 +1,12 @@
 package unit
 
 // Power represents a SI unit of power (in watts, W)
-type Power Unit
+type Power float64
+
+// Float64 implement the Unit interface
+func (p Power) Float64() float64 {
+	return float64(p)
+}
 
 // ...
 const (

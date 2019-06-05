@@ -1,7 +1,12 @@
 package unit
 
 // Mass represents a SI unit of mass (in grams, G)
-type Mass Unit
+type Mass float64
+
+// Float64 implement the Unit interface
+func (m Mass) Float64() float64 {
+	return float64(m)
+}
 
 // ...
 const (

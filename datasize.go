@@ -1,7 +1,12 @@
 package unit
 
 // Datasize represents a unit of data size (in bits, bit)
-type Datasize Unit
+type Datasize float64
+
+// Float64 implement the Unit interface
+func (d Datasize) Float64() float64 {
+	return float64(d)
+}
 
 // ...
 const (
@@ -47,171 +52,171 @@ const (
 )
 
 // Bits returns the datasize in bit
-func (b Datasize) Bits() float64 {
-	return float64(b)
+func (d Datasize) Bits() float64 {
+	return float64(d)
 }
 
 // Kilobits returns the datasize in kbit
-func (b Datasize) Kilobits() float64 {
-	return float64(b / Kilobit)
+func (d Datasize) Kilobits() float64 {
+	return float64(d / Kilobit)
 }
 
 // Megabits returns the datasize in Mbit
-func (b Datasize) Megabits() float64 {
-	return float64(b / Megabit)
+func (d Datasize) Megabits() float64 {
+	return float64(d / Megabit)
 }
 
 // Gigabits returns the datasize in Gbit
-func (b Datasize) Gigabits() float64 {
-	return float64(b / Gigabit)
+func (d Datasize) Gigabits() float64 {
+	return float64(d / Gigabit)
 }
 
 // Terabits returns the datasize in Tbit
-func (b Datasize) Terabits() float64 {
-	return float64(b / Terabit)
+func (d Datasize) Terabits() float64 {
+	return float64(d / Terabit)
 }
 
 // Petabits returns the datasize in Pbit
-func (b Datasize) Petabits() float64 {
-	return float64(b / Petabit)
+func (d Datasize) Petabits() float64 {
+	return float64(d / Petabit)
 }
 
 // Exabits returns the datasize in Ebit
-func (b Datasize) Exabits() float64 {
-	return float64(b / Exabit)
+func (d Datasize) Exabits() float64 {
+	return float64(d / Exabit)
 }
 
 // Zettabits returns the datasize in Zbit
-func (b Datasize) Zettabits() float64 {
-	return float64(b / Zettabit)
+func (d Datasize) Zettabits() float64 {
+	return float64(d / Zettabit)
 }
 
 // Yottabits returns the datasize in Ybit
-func (b Datasize) Yottabits() float64 {
-	return float64(b / Yottabit)
+func (d Datasize) Yottabits() float64 {
+	return float64(d / Yottabit)
 }
 
 // Bytes returns the datasize in B
-func (b Datasize) Bytes() float64 {
-	return float64(b / Byte)
+func (d Datasize) Bytes() float64 {
+	return float64(d / Byte)
 }
 
 // Kilobytes returns the datasize in kB
-func (b Datasize) Kilobytes() float64 {
-	return float64(b / Kilobyte)
+func (d Datasize) Kilobytes() float64 {
+	return float64(d / Kilobyte)
 }
 
 // Megabytes returns the datasize in MB
-func (b Datasize) Megabytes() float64 {
-	return float64(b / Megabyte)
+func (d Datasize) Megabytes() float64 {
+	return float64(d / Megabyte)
 }
 
 // Gigabytes returns the datasize in GB
-func (b Datasize) Gigabytes() float64 {
-	return float64(b / Gigabyte)
+func (d Datasize) Gigabytes() float64 {
+	return float64(d / Gigabyte)
 }
 
 // Terabytes returns the datasize in TB
-func (b Datasize) Terabytes() float64 {
-	return float64(b / Terabyte)
+func (d Datasize) Terabytes() float64 {
+	return float64(d / Terabyte)
 }
 
 // Petabytes returns the datasize in PB
-func (b Datasize) Petabytes() float64 {
-	return float64(b / Petabyte)
+func (d Datasize) Petabytes() float64 {
+	return float64(d / Petabyte)
 }
 
 // Exabytes returns the datasize in EB
-func (b Datasize) Exabytes() float64 {
-	return float64(b / Exabyte)
+func (d Datasize) Exabytes() float64 {
+	return float64(d / Exabyte)
 }
 
 // Zettabytes returns the datasize in ZB
-func (b Datasize) Zettabytes() float64 {
-	return float64(b / Zettabyte)
+func (d Datasize) Zettabytes() float64 {
+	return float64(d / Zettabyte)
 }
 
 // Yottabytes returns the datasize in YB
-func (b Datasize) Yottabytes() float64 {
-	return float64(b / Yottabyte)
+func (d Datasize) Yottabytes() float64 {
+	return float64(d / Yottabyte)
 }
 
 // Kibibits returns the datasize in Kibit
-func (b Datasize) Kibibits() float64 {
-	return float64(b / Kibibit)
+func (d Datasize) Kibibits() float64 {
+	return float64(d / Kibibit)
 }
 
 // Mebibits returns the datasize in Mibit
-func (b Datasize) Mebibits() float64 {
-	return float64(b / Mebibit)
+func (d Datasize) Mebibits() float64 {
+	return float64(d / Mebibit)
 }
 
 // Gibibits returns the datasize in Gibit
-func (b Datasize) Gibibits() float64 {
-	return float64(b / Gibibit)
+func (d Datasize) Gibibits() float64 {
+	return float64(d / Gibibit)
 }
 
 // Tebibits returns the datasize in Tibit
-func (b Datasize) Tebibits() float64 {
-	return float64(b / Tebibit)
+func (d Datasize) Tebibits() float64 {
+	return float64(d / Tebibit)
 }
 
 // Pebibits returns the datasize in Pibit
-func (b Datasize) Pebibits() float64 {
-	return float64(b / Pebibit)
+func (d Datasize) Pebibits() float64 {
+	return float64(d / Pebibit)
 }
 
 // Exbibits returns the datasize in Eibit
-func (b Datasize) Exbibits() float64 {
-	return float64(b / Exbibit)
+func (d Datasize) Exbibits() float64 {
+	return float64(d / Exbibit)
 }
 
 // Zebibits returns the datasize in Zibit
-func (b Datasize) Zebibits() float64 {
-	return float64(b / Zebibit)
+func (d Datasize) Zebibits() float64 {
+	return float64(d / Zebibit)
 }
 
 // Yobibits returns the datasize in Yibit
-func (b Datasize) Yobibits() float64 {
-	return float64(b / Yobibit)
+func (d Datasize) Yobibits() float64 {
+	return float64(d / Yobibit)
 }
 
 // Kibibytes returns the datasize in KiB
-func (b Datasize) Kibibytes() float64 {
-	return float64(b / Kibibyte)
+func (d Datasize) Kibibytes() float64 {
+	return float64(d / Kibibyte)
 }
 
 // Mebibytes returns the datasize in MiB
-func (b Datasize) Mebibytes() float64 {
-	return float64(b / Mebibyte)
+func (d Datasize) Mebibytes() float64 {
+	return float64(d / Mebibyte)
 }
 
 // Gibibytes returns the datasize in GiB
-func (b Datasize) Gibibytes() float64 {
-	return float64(b / Gibibyte)
+func (d Datasize) Gibibytes() float64 {
+	return float64(d / Gibibyte)
 }
 
 // Tebibytes returns the datasize in TiB
-func (b Datasize) Tebibytes() float64 {
-	return float64(b / Tebibyte)
+func (d Datasize) Tebibytes() float64 {
+	return float64(d / Tebibyte)
 }
 
 // Pebibytes returns the datasize in PiB
-func (b Datasize) Pebibytes() float64 {
-	return float64(b / Pebibyte)
+func (d Datasize) Pebibytes() float64 {
+	return float64(d / Pebibyte)
 }
 
 // Exbibytes returns the datasize in EiB
-func (b Datasize) Exbibytes() float64 {
-	return float64(b / Exbibyte)
+func (d Datasize) Exbibytes() float64 {
+	return float64(d / Exbibyte)
 }
 
 // Zebibytes returns the datasize in ZiB
-func (b Datasize) Zebibytes() float64 {
-	return float64(b / Zebibyte)
+func (d Datasize) Zebibytes() float64 {
+	return float64(d / Zebibyte)
 }
 
 // Yobibytes returns the datasize in YiB
-func (b Datasize) Yobibytes() float64 {
-	return float64(b / Yobibyte)
+func (d Datasize) Yobibytes() float64 {
+	return float64(d / Yobibyte)
 }

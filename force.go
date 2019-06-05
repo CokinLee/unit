@@ -1,7 +1,12 @@
 package unit
 
 // Force represents a SI unit of force (in newtons, N)
-type Force Unit
+type Force float64
+
+// Float64 implement the Unit interface
+func (f Force) Float64() float64 {
+	return float64(f)
+}
 
 // ...
 const (

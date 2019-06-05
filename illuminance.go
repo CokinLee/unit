@@ -1,7 +1,12 @@
 package unit
 
 // Illuminance represents a SI unit for illuminance (in lux, lx)
-type Illuminance Unit
+type Illuminance float64
+
+// Float64 implement the Unit interface
+func (i Illuminance) Float64() float64 {
+	return float64(i)
+}
 
 // constants
 const (

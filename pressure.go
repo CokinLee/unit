@@ -1,7 +1,12 @@
 package unit
 
 // Pressure represents a SI derived unit of pressure (in pascal, Pa)
-type Pressure Unit
+type Pressure float64
+
+// Float64 implement the Unit interface
+func (p Pressure) Float64() float64 {
+	return float64(p)
+}
 
 // ...
 const (

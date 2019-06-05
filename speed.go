@@ -1,7 +1,12 @@
 package unit
 
 // Speed represents a unit of speed (in meters per second, m/s)
-type Speed Unit
+type Speed float64
+
+// Float64 implement the Unit interface
+func (s Speed) Float64() float64 {
+	return float64(s)
+}
 
 // ...
 const (

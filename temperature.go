@@ -1,7 +1,12 @@
 package unit
 
 // Temperature represents a SI unit of temperature (in kelvin, K)
-type Temperature Unit
+type Temperature float64
+
+// Float64 implement the Unit interface
+func (t Temperature) Float64() float64 {
+	return float64(t)
+}
 
 // ...
 const (

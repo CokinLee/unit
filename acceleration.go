@@ -1,7 +1,12 @@
 package unit
 
 // Acceleration represents a SI unit of acceleration (in meter per second squared, m/s²)
-type Acceleration Unit
+type Acceleration float64
+
+// Float64 implement the Unit interface
+func (a Acceleration) Float64() float64 {
+	return float64(a)
+}
 
 // ...
 const (

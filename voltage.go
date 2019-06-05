@@ -1,7 +1,12 @@
 package unit
 
 // Voltage represents a unit of voltage (in volt, V)
-type Voltage Unit
+type Voltage float64
+
+// Float64 implement the Unit interface
+func (v Voltage) Float64() float64 {
+	return float64(v)
+}
 
 // ...
 const (

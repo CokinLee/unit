@@ -1,7 +1,12 @@
 package unit
 
 // ElectricalResistance represents a SI derived unit of electrical resistance (in ohm, Ω)
-type ElectricalResistance Unit
+type ElectricalResistance float64
+
+// Float64 implement the Unit interface
+func (e ElectricalResistance) Float64() float64 {
+	return float64(e)
+}
 
 // ...
 const (
