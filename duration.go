@@ -40,6 +40,8 @@ const (
 	Week           = Day * 7
 	ThirtyDayMonth = Day * 30
 	JulianYear     = Day * 365.25
+	Year360        = Day * 30 * 12
+	Century        = Year360 * 100
 )
 
 // Yoctoseconds returns the time in ys
